@@ -52,7 +52,9 @@ public class App
     	// user must choose 5 selected words
     	
     	// the password is generated and returned to the user via console
-    	inputScanner.close();
+    	
     	System.out.println("Generated Password: [" + password.toString() + "].");
+    	
+    	inputScanner.close();
     }
 }
