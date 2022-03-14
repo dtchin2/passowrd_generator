@@ -1,6 +1,7 @@
 package com.dtchin2.passgen.generator;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -68,7 +69,7 @@ public class PasswordRandomizer {
 		String randomPass = "";
 		
 		for(String word: suggWords) {
-			randomPass.concat(word);
+			randomPass = randomPass + word;
 		}
 		
 		// now check if character length of 'randomPass' is equal to the suggested passLength
@@ -104,7 +105,7 @@ public class PasswordRandomizer {
 			}
 		}
 		
-		randomPass = arrOfChars.toString();
+		randomPass = Arrays.toString(arrOfChars);
 		
 		return randomPass;
 	}
